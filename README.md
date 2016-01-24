@@ -11,4 +11,4 @@ To convert an ods spreadsheet comprised of sheets A, B, C, and D to a SQLite3 da
 
 To convert the first sheet in an ods spreadsheet to an html table (sortable with sortable.js), run:
 
-`$ python convert.py EXAMPLE.ods'
+`$ python convert.py EXAMPLE.ods`
