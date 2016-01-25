@@ -1,6 +1,6 @@
 # Spreadsheets
 
-## Utilities for converting .ods files to sqlite3 databases and html tables
+## Utilities to convert .ods files to sqlite3 databases & html tables
 
 Can be imported or used on the command line, with optional arguments to specify sheets. 
 
