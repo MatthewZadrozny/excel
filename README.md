@@ -16,4 +16,4 @@ To convert the first sheet in an ods spreadsheet to an html table (sortable with
 
 ### Dependencies
 
-[Sortable] (http://www.kryogenix.org/code/browser/sorttable/)
+* [Sortable] (http://www.kryogenix.org/code/browser/sorttable/)
