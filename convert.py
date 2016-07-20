@@ -23,13 +23,13 @@ def rename(ods, extension):
 
 
 def array(ods, sheet):
-	'''Converts individual .ods spreadsheet sheet to an array'''
-	spreadsheet = ezodf.opendoc(ods)
-	table = spreadsheet.sheets[sheet]
-	return [[str(c.value) 
-				if str(c.value)[-2:] != '.0' 
-				else str(c.value)[:-2] for c in r] 
-					for r in list(table.rows())]
+    '''Converts individual .ods spreadsheet sheet to an array'''
+    spreadsheet = ezodf.opendoc(ods)
+    table = spreadsheet.sheets[sheet]
+    return [[str(c.value) 
+             if str(c.value)[-2:] != '.0' 
+             else str(c.value)[:-2] for c in r] 
+             for r in list(table.rows())]
 
 
 
@@ -68,13 +68,11 @@ def html(ods, sheet):
         htmlfile.write('</table>\n')
 
 
+
 def pandas(ods, sheet, dropped=True):
 	'''Converts an .ods sheet to a pandas DataFrame'''
-	
 	arr = array(ods, sheet)
-
 	df = pd.DataFrame(arr[1:], columns=arr[0])
-
 	if dropped:
 		return df.replace("None", float("nan"))\
 				 .dropna(how='all')\
@@ -151,5 +149,3 @@ if __name__ == '__main__':
         html(ods, sheets)
     elif output == 'sql':
         sql(ods, sheets)
-
-
