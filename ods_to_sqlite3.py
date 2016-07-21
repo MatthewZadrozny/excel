@@ -11,8 +11,10 @@ import sys
 # Fix the PK keys so that they're not floats!
 
 def convert(ods_file, sheets=None):
-    '''Takes an ODS spreadsheet and optional 
-    list of sheets and turns it into a DB'''
+    '''
+    Takes an ODS spreadsheet and optional 
+    list of sheets and turns it into an sqlite3 database
+    '''
 
     db_name = str(ods_file)[0:-4]+'.db' 
     conn = sqlite3.connect(db_name) 
