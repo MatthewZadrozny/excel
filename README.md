@@ -4,7 +4,7 @@
 
 Can be imported or used on the command line, with optional arguments to specify sheets. 
 
-To convert an sheet A of an ods spreadsheet comprised of sheets A, B, C to an html table (sortable with sortable.js), command bash like so:
+To convert worksheet A of EXAMPLES.ods to an html table (sortable with sortable.js), command bash like so:
 
 `$ python convert.py EXAMPLE.ods html A`
 
