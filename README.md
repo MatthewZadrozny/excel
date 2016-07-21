@@ -1,17 +1,12 @@
 # Spreadsheets
 
-## Utilities to convert .ods files to sqlite3 databases & html tables
+## Utilities to convert .ods files to .txt, html tables, pandas DataFrame, and sqlite3
 
 Can be imported or used on the command line, with optional arguments to specify sheets. 
 
-To convert an ods spreadsheet comprised of sheets A, B, C, and D to a SQLite3 database with only sheets A, B, C run:
+To convert an sheet A of an ods spreadsheet comprised of sheets A, B, C to an html table (sortable with sortable.js), command bash like so:
 
-`$ python convert.py EXAMPLE.ods A B C`
-
-
-To convert the first sheet in an ods spreadsheet to an html table (sortable with sortable.js), run:
-
-`$ python convert.py EXAMPLE.ods`
+`$ python convert.py EXAMPLE.ods html A`
 
 
 ### Dependencies
